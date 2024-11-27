@@ -1,0 +1,170 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #3c8dbc;
+    border-bottom: 3px solid #2c3e50;
+}
+
+.navbar-brand, .nav-link {
+    color: gray !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: black !important;
+}
+
+/* Section Styling */
+section {
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    background-color: #f0f8ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cropSection {
+    background-color: #e3f2fd;
+}
+
+#weatherSection {
+    background-color: #f3e5f5;
+}
+
+#pestSection {
+    background-color: #e8f5e9;
+}
+
+#priceSection {
+    background-color: #fff3e0;
+}
+
+/* Form and Button Styling */
+form label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+select, button {
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+button {
+    background-color: #3c8dbc;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2c6fa6;
+}
+
+/* Crop Recommendation Result Styling */
+#cropResult {
+    color: #388e3c;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Weather Display Styling */
+#weatherDisplay {
+    color: #2c3e50;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #e1f5fe;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Pest Gallery and Info */
+#pestGallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#pestGallery img {
+    width: 120px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s, border-color 0.2s;
+    cursor: pointer;
+}
+
+#pestGallery img:hover {
+    border-color: #3c8dbc;
+    transform: scale(1.05);
+}
+
+#pestInfo {
+    font-size: 16px;
+    color: #444;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #3c8dbc;
+    border-radius: 5px;
+}
+
+/* Market Prices List */
+#priceList {
+    list-style: none;
+    padding-left: 0;
+}
+
+#priceList li {
+    font-size: 18px;
+    color: #2c3e50;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#priceList li:last-child {
+    border-bottom: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #pestGallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pestGallery img {
+        width: 100px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
